@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.section {
+  padding: .3125rem .625rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  position: fixed;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #121212;
+  -webkit-box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
+          box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
+}
+
+.header nav {
+  height: inherit;
+}
+
+.header__logo a {
+  color: #ededed;
+  font-family: "Aladin", cursive;
+  font-size: 1.875rem;
+}
+
+.header__menu button {
+  display: block;
+  border: none;
+  outline: none;
+  background: inherit;
+  padding: 5px;
+}
+
+.header__menu button span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+}
+
+.header__menu button span:not(:last-child) {
+  margin-bottom: 4px;
+}
+/*# sourceMappingURL=style.css.map */

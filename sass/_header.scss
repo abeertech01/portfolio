@@ -1,0 +1,40 @@
+.header{
+  position: fixed;
+  height: 2.5rem;
+  width: 100%;
+  background-color: $black;
+  box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
+
+  nav{
+    height: inherit;
+  }
+
+  &__logo{
+    a{
+      color: $lightGray;
+      font-family: $aladinFont;
+      font-size: $font-giant;
+    }
+  }
+
+  &__menu{
+    button{
+      display: block;
+      border: none;
+      outline: none;
+      background: inherit;
+      padding: 5px;
+
+      span{
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: white;
+
+        &:not(:last-child){
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
