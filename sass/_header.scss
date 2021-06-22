@@ -19,12 +19,12 @@
   }
 
   &__menu{
-    button{
       display: block;
       border: none;
       outline: none;
       background: inherit;
       padding: 0.3125rem;
+      cursor: pointer;
 
       span{
         display: block;
@@ -36,18 +36,21 @@
           margin-bottom: 0.25rem;
         }
       }
-    }
   }
 
   &__nav-menu{
-    display: none;
     position: fixed;
-    width: 80%;
-    top: px2rem(80);
-    right: px2rem(-25);
+    width: 65%;
+    top: px2rem(55);
+    right: -100%;
     background-color: $gray;
     border-radius: px2rem(5);
+    transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &.show{
+      right: px2rem(-25);
+    }
   }
 
   &__nav-list{
