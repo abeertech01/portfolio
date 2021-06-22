@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// Function
+@function px2rem($px){
+  @return $px/16 + rem;
+}
 
 // Fonts
 $aladinFont: 'Aladin', cursive;
+$robotoFont: 'Roboto', sans-serif;
 
 // Font-size
-$font-sm: 0.875rem; //14px
-$font-med: 1.125rem; // 18px
-$font-lg: 1.25rem; // 20px
-$font-xlg: 1.5rem; // 24px
-$font-giant: 1.875rem; // 30px
+$font-sm: px2rem(14); //14px
+$font-med: px2rem(18); // 18px
+$font-lg: px2rem(20); // 20px
+$font-xlg: px2rem(24); // 24px
+$font-giant: px2rem(30); // 30px
 
 // Colors
 $black: #121212;
-$matteBlack: #1c1c1c;
+$matteBlack: #1b1b1b;
+$gray: #bbbbbb;
 $lightGray: #ededed;
 $yellow: #fff37a;

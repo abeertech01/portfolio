@@ -17,13 +17,23 @@ a, a:visited, a:hover{
   text-decoration: none;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .section{
-  padding: .3125rem .625rem;
+  padding: px2rem(5) px2rem(10);
 }
 
 // Flex
 .flex{
   display: flex;
+
+  &-dir-col{
+    flex-direction: column;
+  }
 
   &-jc-sb{
     justify-content: space-between;
