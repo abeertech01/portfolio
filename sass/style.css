@@ -77,7 +77,7 @@ ul {
 }
 
 .header__logo a {
-  color: #ededed;
+  color: #bbbbbb;
   font-family: "Aladin", cursive;
   font-size: 1.875rem;
 }
@@ -95,7 +95,7 @@ ul {
   display: block;
   width: 1.625rem;
   height: 0.125rem;
-  background-color: white;
+  background-color: #bbbbbb;
 }
 
 .header__menu span:not(:last-child) {
@@ -104,6 +104,7 @@ ul {
 
 .header__nav-menu {
   position: fixed;
+  z-index: 2;
   width: 65%;
   top: 3.4375rem;
   right: -100%;
@@ -146,6 +147,15 @@ ul {
 
 .header__nav-item:not(:last-child) {
   margin-bottom: 0.9375rem;
+}
+
+.header__mode {
+  position: absolute;
+  color: #bbbbbb;
+  top: 3.75rem;
+  right: 0.3125rem;
+  font-size: 1.5rem;
+  z-index: 1;
 }
 
 .home {
