@@ -47,3 +47,16 @@ ul{
     align-items: center;
   }
 }
+
+// Visibility
+.hide-for-mobile{
+  @include breakpoint-down(small){
+    display: none;
+  }
+}
+
+.hide-for-tablet{
+  @include breakpoint-up(medium){
+    display: none;
+  }
+}

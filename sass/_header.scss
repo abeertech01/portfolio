@@ -1,7 +1,7 @@
 .header{
   position: fixed;
   top: 0;
-  height: 2.5;
+  height: 2.5rem;
   width: 100%;
   background-color: $black;
   box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
@@ -12,14 +12,36 @@
 
   &__logo{
     a{
-      color: $gray;
-      font-family: $aladinFont;
-      font-size: $font-giant;
+      position: relative;
+      
+      .v-1{
+        position: relative;
+        // top: px2rem(-3);
+        color: $gray;
+        font-family: $josefinFont;
+        font-size: px2rem(30);
+        font-weight: 300;
+      }
+      .v-2{
+        position: absolute;
+        left: 3.5px;
+        color: $gray;
+        font-family: $josefinFont;
+        font-size: px2rem(20);
+        font-weight: 300;
+      }
+      .v-3{
+        position: absolute;
+        left: 6.5px;
+        color: $gray;
+        font-family: $josefinFont;
+        font-size: px2rem(10);
+        font-weight: 300;
+      }
     }
   }
 
   &__menu{
-      display: block;
       border: none;
       outline: none;
       background: inherit;
