@@ -25,6 +25,10 @@ ul{
 
 .section{
   padding: px2rem(5) px2rem(10);
+
+  @include breakpoint-up(large){
+    padding: px2rem(5) 15%;
+  }
 }
 
 // Flex
