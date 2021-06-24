@@ -1,6 +1,5 @@
 .home{
   height: 100vh;
-  font-family: $robotoFont;
 
   &__name{
     text-align: center;
@@ -10,7 +9,7 @@
     text-transform: uppercase;
 
     @include breakpoint-up(large){
-      font-size: px2rem(60);
+      font-size: px2rem(50);
     }
 
     .name-1{

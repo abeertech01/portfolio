@@ -1,0 +1,29 @@
+.about{
+  min-height: 100vh;
+  padding: 0 px2rem(20);
+  color: $gray;
+  font-family: $interFont;
+
+  @include breakpoint-up(medium){
+    padding: 0 10%;
+  }
+
+  @include breakpoint-up(large){
+    padding: 0 25%;
+  }
+
+  &__title{
+    text-align: center;
+    font-size: $font-xgiant;
+  }
+
+  &__text{
+    letter-spacing: px2rem(0.7);
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @include breakpoint-up(medium){
+      font-size: $font-lg;
+    }
+  }
+}

@@ -2,12 +2,13 @@
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: px2rem(50);
   background-color: $black;
   box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
 
-  // nav{
-    
-  // }
+  nav{
+    min-height: inherit;
+  }
 
   &__logo{
     a{

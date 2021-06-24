@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -14,7 +15,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1b1b1b;
+  font-family: "Roboto", sans-serif;
+  background-color: #252424;
 }
 
 a, a:visited, a:hover {
@@ -28,12 +30,12 @@ ul {
 }
 
 .section {
-  padding: 0.3125rem 0.625rem;
+  padding: 0 1.25rem;
 }
 
 @media (min-width: 64em) {
   .section {
-    padding: 0.3125rem 15%;
+    padding: 0 15%;
   }
 }
 
@@ -84,9 +86,14 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 3.125rem;
   background-color: #121212;
   -webkit-box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
           box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
+}
+
+.header nav {
+  min-height: inherit;
 }
 
 .header__logo a {
@@ -211,7 +218,6 @@ ul {
 
 .home {
   height: 100vh;
-  font-family: "Roboto", sans-serif;
 }
 
 .home__name {
@@ -224,7 +230,7 @@ ul {
 
 @media (min-width: 64em) {
   .home__name {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
   }
 }
 
@@ -271,5 +277,41 @@ ul {
 
 .home__social a:not(:last-child) {
   margin-right: 0.9375rem;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 0 1.25rem;
+  color: #bbbbbb;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 40em) {
+  .about {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 64em) {
+  .about {
+    padding: 0 25%;
+  }
+}
+
+.about__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about__text {
+  letter-spacing: 0.04375rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 40em) {
+  .about__text {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

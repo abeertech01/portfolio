@@ -10,6 +10,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  font-family: $robotoFont;
   background-color: $matteBlack;
 }
 
@@ -24,10 +25,10 @@ ul{
 }
 
 .section{
-  padding: px2rem(5) px2rem(10);
+  padding: 0 px2rem(20);
 
   @include breakpoint-up(large){
-    padding: px2rem(5) 15%;
+    padding: 0 15%;
   }
 }
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
 
 // Function
 @function px2rem($px){
@@ -9,6 +10,7 @@
 // Fonts
 $blackOpsFont: 'Black Ops One', cursive;
 $robotoFont: 'Roboto', sans-serif;
+$interFont: 'Inter', sans-serif;
 
 // Font-size
 $font-sm: px2rem(14); //14px
@@ -16,10 +18,11 @@ $font-med: px2rem(18); // 18px
 $font-lg: px2rem(20); // 20px
 $font-xlg: px2rem(24); // 24px
 $font-giant: px2rem(30); // 30px
+$font-xgiant: px2rem(40); // 30px
 
 // Colors
 $black: #121212;
-$matteBlack: #1b1b1b;
+$matteBlack: #252424;
 $gray: #bbbbbb;
 $lightGray: #ededed;
 $darkGray: #3a3a3a;
