@@ -83,21 +83,38 @@ ul {
 .header {
   position: fixed;
   top: 0;
-  height: 2.5rem;
   width: 100%;
   background-color: #121212;
   -webkit-box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
           box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
 }
 
-.header nav {
-  height: inherit;
-}
-
 .header__logo a {
   font-family: "Black Ops One", cursive;
   color: #bbbbbb;
   font-size: 1.875rem;
+}
+
+.header__right-side .pipe {
+  color: #bbbbbb;
+  margin: 0 0.9375rem;
+  font-size: 1.5rem;
+}
+
+.header__right-side .pipe-1 {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .header__right-side .pipe-1 {
+    display: inline;
+  }
+}
+
+@media (min-width: 40em) {
+  .header__right-side .pipe-2 {
+    display: none;
+  }
 }
 
 .header__menu {
@@ -121,7 +138,6 @@ ul {
 
 .header__nav-menu {
   position: fixed;
-  z-index: 2;
   width: 65%;
   top: 3.4375rem;
   right: -100%;
@@ -137,9 +153,10 @@ ul {
 @media (min-width: 40em) {
   .header__nav-menu {
     position: relative;
+    display: inline-block;
     width: auto;
     top: auto;
-    right: 0;
+    right: auto;
     border: none;
   }
 }
@@ -160,23 +177,16 @@ ul {
 
 .header__nav-item a {
   display: inline-block;
+  padding: 0.3125rem 0.625rem;
   font-family: "Roboto", sans-serif;
   color: #bbbbbb;
   font-weight: bold;
   font-size: 1.125rem;
+  border-radius: 0.3125rem;
 }
 
-.header__nav-item a::after {
-  content: "";
-  display: block;
-  width: inherit;
-  height: 0.125rem;
-  background-color: #bbbbbb;
-  opacity: 0;
-}
-
-.header__nav-item a:hover::after {
-  opacity: 1;
+.header__nav-item a:hover {
+  background-color: #3a3a3a;
 }
 
 @media (max-width: 39.9375em) {
@@ -189,18 +199,14 @@ ul {
   .header__nav-item {
     display: inline-block;
   }
-  .header__nav-item:not(:last-child) {
-    margin-right: 0.9375rem;
-  }
 }
 
 .header__mode {
-  position: absolute;
+  display: inline-block;
   color: #bbbbbb;
-  top: 3.75rem;
-  right: 0.3125rem;
   font-size: 1.5rem;
-  z-index: 1;
+  padding-top: 0.25rem;
+  cursor: pointer;
 }
 
 .home {
@@ -216,10 +222,22 @@ ul {
   text-transform: uppercase;
 }
 
+@media (min-width: 64em) {
+  .home__name {
+    font-size: 3.75rem;
+  }
+}
+
 .home__name .name-1 {
   display: block;
   color: #bbbbbb;
   font-weight: bolder;
+}
+
+@media (min-width: 64em) {
+  .home__name .name-1 {
+    display: inline-block;
+  }
 }
 
 .home__name .name-2 {
@@ -227,11 +245,23 @@ ul {
   color: #ededed;
 }
 
+@media (min-width: 64em) {
+  .home__name .name-2 {
+    display: inline-block;
+  }
+}
+
 .home__profession {
   margin-bottom: 0.5rem;
   text-align: center;
   color: #bbbbbb;
   font-size: 1.25rem;
+}
+
+@media (min-width: 64em) {
+  .home__profession {
+    font-size: 1.5rem;
+  }
 }
 
 .home__social a {

@@ -1,20 +1,41 @@
 .header{
   position: fixed;
   top: 0;
-  height: 2.5rem;
   width: 100%;
   background-color: $black;
   box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
 
-  nav{
-    height: inherit;
-  }
+  // nav{
+    
+  // }
 
   &__logo{
     a{
       font-family: $blackOpsFont;
       color: $gray;
       font-size: $font-giant;
+    }
+  }
+
+  &__right-side{
+    .pipe{
+      color: $gray;
+      margin: 0 px2rem(15);
+      font-size: $font-xlg;
+    }
+
+    .pipe-1{
+      display: none;
+
+      @include breakpoint-up(medium){
+        display: inline;
+      }
+    }
+
+    .pipe-2{
+      @include breakpoint-up(medium){
+        display: none;
+      }
     }
   }
 
@@ -39,7 +60,6 @@
 
   &__nav-menu{
     position: fixed;
-    z-index: 2;
     width: 65%;
     top: px2rem(55);
     right: -100%;
@@ -51,9 +71,10 @@
 
     @include breakpoint-up(medium){
       position: relative;
+      display: inline-block;
       width: auto;
       top: auto;
-      right: 0;
+      right: auto;
       border: none;
     }
 
@@ -73,25 +94,15 @@
   &__nav-item{
     a{
       display: inline-block;
+      padding: px2rem(5) px2rem(10);
       font-family: $robotoFont;
       color: $gray;
       font-weight: bold;
       font-size: $font-med;
-
-      &::after{
-        content: "";
-        display: block;
-        width: inherit;
-        height: px2rem(2);
-        background-color: $gray;
-        opacity: 0;
-      }
+      border-radius: px2rem(5);
 
       &:hover{
-
-        &::after{
-          opacity: 1;
-        }
+        background-color: $darkGray;
       }
     }
 
@@ -104,19 +115,14 @@
 
     @include breakpoint-up(medium){
       display: inline-block;
-
-      &:not(:last-child){
-        margin-right: px2rem(15);
-      }
     }
   }
 
   &__mode{
-    position: absolute;
+    display: inline-block;
     color: $gray;
-    top: px2rem(60);
-    right: px2rem(5);
     font-size: $font-xlg;
-    z-index: 1;
+    padding-top: px2rem(4);
+    cursor: pointer;
   }
 }
