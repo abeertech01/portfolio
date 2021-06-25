@@ -1,7 +1,6 @@
 .about{
   min-height: 100vh;
   padding: 0 px2rem(20);
-  color: $gray;
   font-family: $interFont;
 
   @include breakpoint-up(medium){
@@ -19,9 +18,7 @@
 
   &__text{
     text-align: center;
-    letter-spacing: px2rem(0.7);
     font-size: 1rem;
-    line-height: 1.5;
 
     @include breakpoint-up(medium){
       text-align: justify;

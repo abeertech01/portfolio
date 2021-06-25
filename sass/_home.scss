@@ -14,7 +14,6 @@
 
     .name-1{
       display: block;
-      color: $gray;
       font-weight: bolder;
 
       @include breakpoint-up(large){
@@ -34,7 +33,6 @@
   &__profession{
     margin-bottom: px2rem(8);
     text-align: center;
-    color: $gray;
     font-size: $font-lg;
 
     @include breakpoint-up(large){
@@ -45,7 +43,6 @@
   &__social{
     
     a{
-      color: $gray;
       font-size: $font-giant;
 
       &:not(:last-child){

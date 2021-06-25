@@ -8,13 +8,17 @@ html{
 }
 
 body{
+  line-height: 1.5;
+  letter-spacing: px2rem(0.7);
   margin: 0;
   padding: 0;
+  color: $gray;
   font-family: $robotoFont;
   background-color: $matteBlack;
 }
 
 a, a:visited, a:hover{
+  color: $gray;
   text-decoration: none;
 }
 
@@ -22,6 +26,11 @@ ul{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+section{
+  margin-bottom: px2rem(50);
+  z-index: 1;
 }
 
 .section{

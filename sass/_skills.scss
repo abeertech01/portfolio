@@ -1,0 +1,83 @@
+.skills{
+  padding: 0 px2rem(20);
+  min-height: calc(100vh - 3.125rem);
+  font-size: 1rem;
+
+  @include breakpoint-up(medium){
+    font-size: $font-lg;
+    padding: 0 10%;
+  }
+
+  @include breakpoint-up(xlarge){
+    font-size: $font-xlg;
+  }
+
+  @include breakpoint-up(large){
+    padding: 0 15%;
+  }
+  
+  &__title{
+    font-size: $font-xgiant;
+  }
+
+  &__box{
+    border: 1px solid magenta;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0 15%;
+    padding: px2rem(40);
+    border: px2rem(2) solid $gray;
+    border-radius: px2rem(15);
+
+    @include breakpoint-up(large){
+      flex-direction: row;
+      border-radius: px2rem(40);
+    }
+
+    @include breakpoint-up(xlarge){
+      padding: px2rem(60);
+    }
+
+    > div{
+      flex: 1;
+      text-align: center;
+      // border: 1px solid magenta;
+      
+      &:not(:last-child){
+        margin-bottom: px2rem(20);
+      }
+
+      h2{
+        font-size: $font-xlg;
+        margin-bottom: px2rem(10);
+
+        @include breakpoint-up(xlarge){
+          font-size: $font-giant;
+        }
+      }
+    }
+  }
+
+  &__explanation{
+    font-size: $font-med;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: px2rem(5);
+
+    @include breakpoint-up(xlarge){
+      bottom: px2rem(10);
+    }
+
+    button{
+      color: $gray;
+      padding: px2rem(5) px2rem(10);
+      text-transform: uppercase;
+      background-color: $black;
+      border: px2rem(1) solid $gray;
+      border-radius: px2rem(50);
+    }
+  }
+}
