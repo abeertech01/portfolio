@@ -304,6 +304,7 @@ ul {
 }
 
 .about__text {
+  text-align: center;
   letter-spacing: 0.04375rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -311,6 +312,7 @@ ul {
 
 @media (min-width: 40em) {
   .about__text {
+    text-align: justify;
     font-size: 1.25rem;
   }
 }
