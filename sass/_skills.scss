@@ -1,11 +1,12 @@
 .skills{
-  padding: 0 px2rem(20);
-  min-height: calc(100vh - 3.125rem);
+  padding: 3.125rem px2rem(20) px2rem(80) px2rem(20);
+  min-height: 100vh;
   font-size: 1rem;
+  text-align: center;
 
   @include breakpoint-up(medium){
     font-size: $font-lg;
-    padding: 0 10%;
+    padding: 3.125rem 10% px2rem(80) 10%;
   }
 
   @include breakpoint-up(xlarge){
@@ -21,18 +22,33 @@
   }
 
   &__box{
-    border: 1px solid magenta;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0 15%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "lang"
+        "frame"
+        "tools";
+    justify-content: space-around;
     padding: px2rem(40);
     border: px2rem(2) solid $gray;
     border-radius: px2rem(15);
 
+    @include breakpoint-up(medium){
+      grid-template-columns: 45% 45%;
+      grid-template-areas: 
+        'lang frame'
+        'tools tools'
+      ;
+      grid-gap: px2rem(10);
+    }
+
     @include breakpoint-up(large){
-      flex-direction: row;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-areas: 
+        "lang frame tools"
+      ;
+      grid-gap: px2rem(10);
       border-radius: px2rem(40);
     }
 
@@ -41,15 +57,31 @@
     }
 
     > div{
-      flex: 1;
-      text-align: center;
-      // border: 1px solid magenta;
       
       &:not(:last-child){
+        padding: px2rem(10);
         margin-bottom: px2rem(20);
+        background-color: $matteBlack-l;
+        border-radius: px2rem(10);
+      }
+
+      @include breakpoint-up(medium){
+        &:not(:last-child){
+          padding: px2rem(20);
+          margin-bottom: px2rem(20);
+          background-color: $matteBlack-l;
+          border-radius: px2rem(10);
+        }
+      }
+
+      @include breakpoint-up(xlarge){
+        &:not(:last-child){
+          padding: px2rem(40);
+        }
       }
 
       h2{
+        line-height: 1;
         font-size: $font-xlg;
         margin-bottom: px2rem(10);
 
@@ -60,11 +92,15 @@
     }
   }
 
+  &__languages{ grid-area: lang; }
+  &__frameworks{ grid-area: frame; }
+  &__tools{ grid-area: tools; }
+
   &__explanation{
-    font-size: $font-med;
     position: absolute;
     left: 0;
     right: 0;
+    font-size: $font-med;
     bottom: px2rem(5);
 
     @include breakpoint-up(xlarge){
