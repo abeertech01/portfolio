@@ -1,0 +1,93 @@
+.contact{
+  text-align: center;
+  padding: px2rem(50) px2rem(20);
+  font-size: 1rem;
+
+  @include breakpoint-up(large){
+    padding: px2rem(50) 15%;
+  }
+
+  &__title{
+    text-align: center;
+    font-size: $font-xgiant;
+
+    @include breakpoint-up(medium){
+      margin-bottom: px2rem(80);
+    }
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-up(medium){
+      flex-direction: row;
+    }
+  }
+
+  &__text{
+    flex: 1;
+    font-family: $interFont;
+
+    @include breakpoint-up(medium){
+      text-align: left;
+      padding-right: px2rem(15);
+    }
+
+    @include breakpoint-up(large){
+      font-size: $font-lg;
+    }
+
+    .contact-icon{
+      font-size: px2rem(50);
+
+      @include breakpoint-up(medium){
+        font-size: px2rem(65);
+      }
+    }
+
+    .text{
+
+      @include breakpoint-up(medium){
+        margin-top: px2rem(25);
+      }      
+    }
+
+    .social{
+      margin-top: px2rem(-15);
+      padding-top: 0;
+      font-size: $font-med;
+
+      .facebook-icon, .twitter-icon{
+        position: relative;
+        top: px2rem(3);
+        font-size: $font-lg;
+      }
+
+    }
+  }
+
+  &__links{
+    flex: 1;
+
+    > div{
+      padding: px2rem(5);
+      background-color: $matteBlack-l;
+      border-radius: px2rem(5);
+
+      &:not(:last-child){
+        margin-bottom: px2rem(15);
+      }
+
+      @include breakpoint-up(large){
+        text-align: left;
+        padding: px2rem(5) px2rem(20);
+        font-size: $font-lg;
+      }
+
+      h2{
+        line-height: 1;
+      }
+    }
+  }
+}

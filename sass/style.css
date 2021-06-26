@@ -488,4 +488,122 @@ section {
 .projects__title {
   font-size: 2.5rem;
 }
+
+.contact {
+  text-align: center;
+  padding: 3.125rem 1.25rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 64em) {
+  .contact {
+    padding: 3.125rem 15%;
+  }
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 40em) {
+  .contact__title {
+    margin-bottom: 5rem;
+  }
+}
+
+.contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .contact__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contact__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 40em) {
+  .contact__text {
+    text-align: left;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact__text {
+    font-size: 1.25rem;
+  }
+}
+
+.contact__text .contact-icon {
+  font-size: 3.125rem;
+}
+
+@media (min-width: 40em) {
+  .contact__text .contact-icon {
+    font-size: 4.0625rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .contact__text .text {
+    margin-top: 1.5625rem;
+  }
+}
+
+.contact__text .social {
+  margin-top: -0.9375rem;
+  padding-top: 0;
+  font-size: 1.125rem;
+}
+
+.contact__text .social .facebook-icon, .contact__text .social .twitter-icon {
+  position: relative;
+  top: 0.1875rem;
+  font-size: 1.25rem;
+}
+
+.contact__links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact__links > div {
+  padding: 0.3125rem;
+  background-color: #2e2c2c;
+  border-radius: 0.3125rem;
+}
+
+.contact__links > div:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .contact__links > div {
+    text-align: left;
+    padding: 0.3125rem 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+.contact__links > div h2 {
+  line-height: 1;
+}
 /*# sourceMappingURL=style.css.map */
