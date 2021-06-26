@@ -1,6 +1,19 @@
 .home{
   min-height: 100vh;
 
+  &__dp{
+    width: px2rem(130);
+    height: px2rem(130);
+    background-repeat: no-repeat;
+    background-position: px2rem(-33) 0;
+    background-size: 140%;
+    border-radius: 50%;
+
+    &.neg-dp{
+      background-image: url('../images/abeer.jpg');
+    }
+  }
+
   &__name{
     text-align: center;
     margin-bottom: px2rem(10);
@@ -32,7 +45,6 @@
 
   &__profession{
     margin-bottom: px2rem(8);
-    text-align: center;
     font-size: $font-lg;
 
     @include breakpoint-up(large){

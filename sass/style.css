@@ -158,7 +158,6 @@ section {
   top: 3.4375rem;
   right: -100%;
   background-color: #121212;
-  border: 2px solid #bbbbbb;
   border-radius: 0.3125rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -229,6 +228,19 @@ section {
   min-height: 100vh;
 }
 
+.home__dp {
+  width: 8.125rem;
+  height: 8.125rem;
+  background-repeat: no-repeat;
+  background-position: -2.0625rem 0;
+  background-size: 140%;
+  border-radius: 50%;
+}
+
+.home__dp.neg-dp {
+  background-image: url("../images/abeer.jpg");
+}
+
 .home__name {
   text-align: center;
   margin-bottom: 0.625rem;
@@ -267,7 +279,6 @@ section {
 
 .home__profession {
   margin-bottom: 0.5rem;
-  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -287,7 +298,7 @@ section {
 
 .about {
   min-height: 100vh;
-  padding: 0 1.25rem 0 1.25rem;
+  padding: 3.125rem 1.25rem;
   font-family: "Inter", sans-serif;
   background-color: #2e2c2c;
 }
