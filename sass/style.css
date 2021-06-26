@@ -232,13 +232,17 @@ section {
   width: 8.125rem;
   height: 8.125rem;
   background-repeat: no-repeat;
-  background-position: -2.0625rem 0;
+  background-position: -2.1875rem 0;
   background-size: 140%;
   border-radius: 50%;
 }
 
-.home__dp.neg-dp {
+.home__dp.dp {
   background-image: url("../images/abeer.jpg");
+}
+
+.home__dp.neg-dp {
+  background-image: url("../images/abeer-neg.jpg");
 }
 
 .home__name {

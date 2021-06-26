@@ -5,12 +5,16 @@
     width: px2rem(130);
     height: px2rem(130);
     background-repeat: no-repeat;
-    background-position: px2rem(-33) 0;
+    background-position: px2rem(-35) 0;
     background-size: 140%;
     border-radius: 50%;
 
-    &.neg-dp{
+    &.dp{
       background-image: url('../images/abeer.jpg');
+    }
+
+    &.neg-dp{
+      background-image: url('../images/abeer-neg.jpg');
     }
   }
 
