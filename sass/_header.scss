@@ -106,6 +106,10 @@
       &:hover{
         background-color: $matteBlack-l;
       }
+
+      .active{
+        background-color: $matteBlack-l;
+      }
     }
 
     @include breakpoint-down(small){

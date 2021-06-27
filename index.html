@@ -15,6 +15,12 @@
 
 <body>
 
+  <!-- 
+    in mobile mode When I click outside the nav menu and header, the nav menu should be closed.
+    so I will use these classes:
+    out-menu = outside the nav menu
+   -->
+
   <!-- HEADER -->
   <header class="header">
     <nav class="nav section flex flex-jc-sb flex-ai-c">
@@ -25,11 +31,11 @@
       <div class="header__right-side flex flex-ai-c">
         <div class="header__nav-menu" id="navMenu">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#home">Home</a></li>
-            <li class="header__nav-item"><a href="#about">About Me</a></li>
-            <li class="header__nav-item"><a href="#skills">Skills</a></li>
-            <li class="header__nav-item"><a href="#projects">Projects</a></li>
-            <li class="header__nav-item"><a href="#contact">Contact</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#home">Home</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#about">About Me</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#skills">Skills</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#projects">Projects</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -51,7 +57,7 @@
   </header>
 
   <!-- Home -->
-  <section class="home flex flex-dir-col flex-jc-c flex-ai-c" id="home">
+  <section class="home out-menu flex flex-dir-col flex-jc-c flex-ai-c" id="home">
 
     <div class="home__dp dp"></div>
 
@@ -72,7 +78,7 @@
   </section>
 
   <!-- About -->
-  <section class="about flex flex-dir-col flex-jc-c flex-ai-c" id="about">
+  <section class="about out-menu flex flex-dir-col flex-jc-c flex-ai-c" id="about">
     <h1 class="about__title">About Me</h1>
     <div class="about__text">
       <p class="text-1">
@@ -98,7 +104,7 @@
   </section>
 
   <!-- Skills -->
-  <section class="skills flex flex-dir-col flex-jc-c" id="skills">
+  <section class="skills out-menu flex flex-dir-col flex-jc-c" id="skills">
     <h1 class="skills__title">Skills</h1>
     <div class="skills__box">
       <!-- Languages -->
@@ -140,7 +146,7 @@
   </section>
 
   <!-- Projects -->
-  <section class="projects flex flex-dir-col flex-jc-c flex-ai-c" id="projects">
+  <section class="projects out-menu flex flex-dir-col flex-jc-c flex-ai-c" id="projects">
     <h1 class="projects__title">Projects</h1>
 
     <div class="projects__box section">
@@ -204,7 +210,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact flex flex-dir-col flex-jc-c" id="contact">
+  <section class="contact out-menu flex flex-dir-col flex-jc-c" id="contact">
     <h1 class="contact__title">Contact</h1>
     <div class="contact__box">
       <div class="contact__text">
@@ -242,7 +248,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer section" id="footer">
+  <footer class="footer out-menu section" id="footer">
     <div class="footer__copyright">
       &#169; 2021 - Abdul-Ahad Abeer
     </div>
