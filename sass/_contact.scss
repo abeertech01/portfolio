@@ -29,7 +29,6 @@
   &__text{
     flex: 1;
     margin-bottom: px2rem(15);
-    font-family: $interFont;
 
     @include breakpoint-up(medium){
       text-align: left;

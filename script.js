@@ -25,6 +25,10 @@ const skillsBox = document.querySelector('.skills__box');//border
 const skillsBoxNextDiv = document.querySelectorAll('.skills__box >div:not(:last-child)');//bg
 const skillsExBtn = document.querySelector('.skills__explanation button');//tx, bg, border
 
+/* ===== Header Special ===== */
+header.classList.add('h-dark-bg');
+/* ===== End of Header Special ===== */
+
 //=== default adding dark mode
 const addModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx, grayBorder) => {
   // global
@@ -33,7 +37,6 @@ const addModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx, g
   a_visited.forEach(el => el.classList.add(grayTx));
   a_hover.forEach(el => el.classList.add(grayTx));
   // header
-  header.classList.add(blackBg);
   menubarSpan.forEach(el => el.classList.add(grayBg));
   headerNavMenu.classList.add(blackBg, grayBorder);
   headerNavLink.forEach(el => el.addEventListener('mouseover', function () {
@@ -60,7 +63,6 @@ const removeModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx
   a_visited.forEach(el => el.classList.remove(grayTx));
   a_hover.forEach(el => el.classList.remove(grayTx));
   // header
-  header.classList.remove(blackBg);
   menubarSpan.forEach(el => el.classList.remove(grayBg));
   headerNavMenu.classList.remove(blackBg, grayBorder);
   // home
@@ -78,11 +80,23 @@ const changeMode = function () {
   isDark = !isDark;
 
   if (isDark) {
+    // Header Special
+    // Remove day mode
+    header.classList.remove('h-day-bg');
+    // Add dark mode
+    header.classList.add('h-dark-bg');
+
     // Removing day mode classes
     removeModeClasses('white-bg', 'matteWhite-bg', 'matteWhite-l-bg', 'ash-bg', 'ash-tx', 'lightAsh-tx', 'ash-border');
     // Adding dark mode classes
     addModeClasses('black-bg', 'matteBlack-bg', 'matteBlack-l-bg', 'gray-bg', 'gray-tx', 'lightGray-tx', 'gray-border');
   } else {
+    // Header Special
+    // Remove dark mode
+    header.classList.remove('h-dark-bg');
+    // Add day mode
+    header.classList.add('h-day-bg');
+
     // Removing dark mode classes
     removeModeClasses('black-bg', 'matteBlack-bg', 'matteBlack-l-bg', 'gray-bg', 'gray-tx', 'lightGray-tx', 'gray-border');
     // Adding day mode classes
