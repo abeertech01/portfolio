@@ -18,13 +18,74 @@ body {
   letter-spacing: 0.04375rem;
   margin: 0;
   padding: 0;
-  color: #bbbbbb;
   font-family: "Roboto", sans-serif;
+}
+
+/*
+blackground color = $black, $matteBlack, $matteBlack-l
+text color = $gray, $lightGray
+*/
+.black-bg {
+  background-color: #121212;
+}
+
+.matteBlack-bg {
   background-color: #252424;
 }
 
-a, a:visited, a:hover {
+.matteBlack-l-bg {
+  background-color: #2e2c2c;
+}
+
+.gray-bg {
+  background-color: #bbbbbb;
+}
+
+.gray-tx {
   color: #bbbbbb;
+}
+
+.lightGray-tx {
+  color: #ededed;
+}
+
+.gray-border {
+  border-color: #bbbbbb;
+}
+
+/*
+background color = $white, $matteWhite, $matteWhite-l
+text color = $ash, $lightAsh
+*/
+.white-bg {
+  background-color: #EDEDED;
+}
+
+.matteWhite-bg {
+  background-color: #DADBDB;
+}
+
+.matteWhite-l-bg {
+  background-color: #D1D3D3;
+}
+
+.ash-bg {
+  background-color: #444444;
+}
+
+.ash-tx {
+  color: #444444;
+}
+
+.lightAsh-tx {
+  color: #121212;
+}
+
+.ash-border {
+  border-color: #444444;
+}
+
+a, a:visited, a:hover {
   text-decoration: none;
 }
 
@@ -96,7 +157,6 @@ section {
   top: 0;
   width: 100%;
   min-height: 3.125rem;
-  background-color: #121212;
   -webkit-box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
           box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
   z-index: 2;
@@ -108,12 +168,10 @@ section {
 
 .header__logo a {
   font-family: "Black Ops One", cursive;
-  color: #bbbbbb;
   font-size: 1.875rem;
 }
 
 .header__right-side .pipe {
-  color: #bbbbbb;
   margin: 0 0.9375rem;
   font-size: 1.5rem;
 }
@@ -146,7 +204,6 @@ section {
   display: block;
   width: 1.625rem;
   height: 0.125rem;
-  background-color: #bbbbbb;
 }
 
 .header__menu span:not(:last-child) {
@@ -158,13 +215,13 @@ section {
   width: 65%;
   top: 3.4375rem;
   right: -100%;
-  background-color: #121212;
   border-radius: 0.3125rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border: 0.125rem solid #bbbbbb;
+  border-width: 0.125rem;
+  border-style: solid;
 }
 
 @media (min-width: 40em) {
@@ -175,6 +232,8 @@ section {
     top: auto;
     right: auto;
     border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -196,18 +255,9 @@ section {
   display: inline-block;
   padding: 0.3125rem 0.625rem;
   font-family: "Roboto", sans-serif;
-  color: #bbbbbb;
   font-weight: bold;
   font-size: 1.125rem;
   border-radius: 0.3125rem;
-}
-
-.header__nav-item a:hover {
-  background-color: #2e2c2c;
-}
-
-.header__nav-item a .active {
-  background-color: #2e2c2c;
 }
 
 @media (max-width: 39.9375em) {
@@ -224,7 +274,6 @@ section {
 
 .header__mode {
   display: inline-block;
-  color: #bbbbbb;
   font-size: 1.5rem;
   padding-top: 0.25rem;
   cursor: pointer;
@@ -278,7 +327,6 @@ section {
 
 .home__name .name-2 {
   display: block;
-  color: #ededed;
 }
 
 @media (min-width: 64em) {
@@ -310,7 +358,6 @@ section {
   min-height: 100vh;
   padding: 3.125rem 1.25rem;
   font-family: "Inter", sans-serif;
-  background-color: #2e2c2c;
 }
 
 @media (min-width: 40em) {
@@ -370,6 +417,13 @@ section {
 
 .skills__title {
   font-size: 2.5rem;
+  margin-bottom: 3.125rem;
+}
+
+@media (min-width: 40em) {
+  .skills__title {
+    margin-bottom: 4.375rem;
+  }
 }
 
 .skills__box {
@@ -382,7 +436,8 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2.5rem;
-  border: 0.125rem solid #bbbbbb;
+  border-width: 0.125rem;
+  border-style: solid;
   border-radius: 0.9375rem;
 }
 
@@ -414,16 +469,12 @@ section {
 .skills__box > div:not(:last-child) {
   padding: 0.625rem;
   margin-bottom: 1.25rem;
-  background-color: #2e2c2c;
   border-radius: 0.625rem;
 }
 
 @media (min-width: 40em) {
   .skills__box > div:not(:last-child) {
     padding: 1.25rem;
-    margin-bottom: 1.25rem;
-    background-color: #2e2c2c;
-    border-radius: 0.625rem;
   }
 }
 
@@ -478,11 +529,10 @@ section {
 }
 
 .skills__explanation button {
-  color: #bbbbbb;
   padding: 0.3125rem 0.625rem;
   text-transform: uppercase;
-  background-color: #121212;
-  border: 0.0625rem solid #bbbbbb;
+  border-width: 0.0625rem;
+  border-style: solid;
   border-radius: 3.125rem;
 }
 

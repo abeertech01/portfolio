@@ -39,7 +39,6 @@
     }
     .name-2{
       display: block;
-      color: $lightGray;
 
       @include breakpoint-up(large){
         display: inline-block;

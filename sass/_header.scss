@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   min-height: px2rem(50);
-  background-color: $black;
   box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px;
   z-index: 2;
 
@@ -14,14 +13,12 @@
   &__logo{
     a{
       font-family: $blackOpsFont;
-      color: $gray;
       font-size: $font-giant;
     }
   }
 
   &__right-side{
     .pipe{
-      color: $gray;
       margin: 0 px2rem(15);
       font-size: $font-xlg;
     }
@@ -52,7 +49,6 @@
         display: block;
         width: 1.625rem;
         height: 0.125rem;
-        background-color: $gray;
 
         &:not(:last-child){
           margin-bottom: 0.25rem;
@@ -65,11 +61,11 @@
     width: 65%;
     top: px2rem(55);
     right: -100%;
-    background-color: $black;
     border-radius: px2rem(5);
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border: px2rem(2) solid $gray;
+    border-width: px2rem(2);
+    border-style: solid;
 
     @include breakpoint-up(medium){
       position: relative;
@@ -78,6 +74,7 @@
       top: auto;
       right: auto;
       border: none;
+      box-shadow: none;
     }
 
     &.show{
@@ -98,18 +95,9 @@
       display: inline-block;
       padding: px2rem(5) px2rem(10);
       font-family: $robotoFont;
-      color: $gray;
       font-weight: bold;
       font-size: $font-med;
       border-radius: px2rem(5);
-
-      &:hover{
-        background-color: $matteBlack-l;
-      }
-
-      .active{
-        background-color: $matteBlack-l;
-      }
     }
 
     @include breakpoint-down(small){
@@ -126,7 +114,6 @@
 
   &__mode{
     display: inline-block;
-    color: $gray;
     font-size: $font-xlg;
     padding-top: px2rem(4);
     cursor: pointer;

@@ -2,7 +2,6 @@
   min-height: 100vh;
   padding: px2rem(50) px2rem(20);
   font-family: $interFont;
-  background-color: $matteBlack-l;
 
   @include breakpoint-up(medium){
     padding: 3.125rem 10% 0 10%;

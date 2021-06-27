@@ -20,11 +20,17 @@ $font-xlg: px2rem(24); // 24px
 $font-giant: px2rem(30); // 30px
 $font-xgiant: px2rem(40); // 30px
 
-// Colors
+// Colors for dark mode
 $black: #121212;
 $matteBlack: #252424;
 $matteBlack-l: #2e2c2c;
 $gray: #bbbbbb;
 $lightGray: #ededed;
-// $darkGray: #3a3a3a;
-$yellow: #fff37a;
+
+// Colors for light mode
+// These colors are opposite of colors for dark mode
+$white: #EDEDED;
+$matteWhite: #DADBDB;
+$matteWhite-l: #D1D3D3;
+$ash: #444444;
+$lightAsh: #121212;

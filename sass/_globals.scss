@@ -13,13 +13,41 @@ body{
   letter-spacing: px2rem(0.7);
   margin: 0;
   padding: 0;
-  color: $gray;
   font-family: $robotoFont;
-  background-color: $matteBlack;
 }
 
+// Colors classes
+/*
+blackground color = $black, $matteBlack, $matteBlack-l
+text color = $gray, $lightGray
+*/
+// Background colors for dark mode
+.black-bg{ background-color: $black;}
+.matteBlack-bg{ background-color: $matteBlack;}
+.matteBlack-l-bg{ background-color: $matteBlack-l;}
+.gray-bg{ background-color: $gray;}
+// Text Colors for dark mode 
+.gray-tx{ color: $gray;}
+.lightGray-tx{ color: $lightGray;}
+// Border color for dark mode
+.gray-border{ border-color: $gray;}
+
+/*
+background color = $white, $matteWhite, $matteWhite-l
+text color = $ash, $lightAsh
+*/
+// Background colors for day mode
+.white-bg{ background-color: $white;}
+.matteWhite-bg{ background-color: $matteWhite;}
+.matteWhite-l-bg{ background-color: $matteWhite-l;}
+.ash-bg{ background-color: $ash;}
+// Text Colors for day mode 
+.ash-tx{ color: $ash;}
+.lightAsh-tx{ color: $lightAsh;}
+// Border color for day mode
+.ash-border{ border-color: $ash;}
+
 a, a:visited, a:hover{
-  color: $gray;
   text-decoration: none;
 }
 
