@@ -541,6 +541,7 @@ section {
 
 .contact {
   text-align: center;
+  min-height: 100vh;
   padding: 3.125rem 1.25rem;
   font-size: 1rem;
 }
@@ -660,5 +661,26 @@ section {
 
 .contact__links > div h2 {
   line-height: 1;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.9375rem 0;
+  background-color: #2e2c2c;
+}
+
+.footer__copyright {
+  margin-bottom: 0.3125rem;
+}
+
+.footer__backToTop a {
+  color: #bbbbbb;
+  padding: 0.3125rem 0.625rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  background-color: #121212;
+  border: 0.0625rem solid #bbbbbb;
+  border-radius: 3.125rem;
 }
 /*# sourceMappingURL=style.css.map */
