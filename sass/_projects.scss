@@ -1,8 +1,45 @@
 .projects{
   min-height: 100vh;
+  padding: 3.125rem 0 px2rem(80) 0;
   background-color: $matteBlack-l;
 
   &__title{
     font-size: $font-xgiant;
+    margin-bottom: px2rem(50);
+
+    @include breakpoint-up(medium){
+      margin-bottom: px2rem(70);
+    }
+
+    @include breakpoint-up(large){
+      margin-bottom: px2rem(80);
+    }
+  }
+
+  &__box{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: px2rem(20);
+    font-size: 1rem;
+
+    @include breakpoint-up(medium){
+      grid-template-columns: repeat(2, 1fr);
+      font-size: $font-med;
+    }
+
+    @include breakpoint-up(xlarge){
+      grid-template-columns: repeat(3, 1fr);
+      font-size: $font-med;
+    }
+  }
+
+  &__project{
+    padding: px2rem(20);
+    background-color: $matteBlack;
+    border-radius: px2rem(5);
+
+    .links{
+      font-size: $font-xlg;
+    }
   }
 }

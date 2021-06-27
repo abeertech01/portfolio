@@ -27,6 +27,7 @@
 
   &__text{
     flex: 1;
+    margin-bottom: px2rem(15);
     font-family: $interFont;
 
     @include breakpoint-up(medium){
@@ -53,8 +54,12 @@
       }      
     }
 
+    h2{
+      margin-top: px2rem(30);
+    }
+
     .social{
-      margin-top: px2rem(-15);
+      margin-top: px2rem(-20);
       padding-top: 0;
       font-size: $font-med;
 
