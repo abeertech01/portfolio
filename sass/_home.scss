@@ -48,8 +48,9 @@
   }
 
   &__profession{
-    margin-bottom: px2rem(8);
+    margin-bottom: px2rem(10);
     font-size: $font-lg;
+    font-weight: 500;
 
     @include breakpoint-up(large){
       font-size: $font-xlg;

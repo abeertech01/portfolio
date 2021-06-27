@@ -23,5 +23,15 @@
       text-align: justify;
       font-size: $font-lg;
     }
+
+    .text-1{
+      .hello{
+        font-size: $font-lg;
+
+        @include breakpoint-up(medium){
+          font-size: $font-xlg;
+        }
+      }
+    }
   }
 }

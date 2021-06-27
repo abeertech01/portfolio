@@ -345,8 +345,9 @@ section {
 }
 
 .home__profession {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
   font-size: 1.25rem;
+  font-weight: 500;
 }
 
 @media (min-width: 64em) {
@@ -394,6 +395,16 @@ section {
   .about__text {
     text-align: justify;
     font-size: 1.25rem;
+  }
+}
+
+.about__text .text-1 .hello {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 40em) {
+  .about__text .text-1 .hello {
+    font-size: 1.5rem;
   }
 }
 
