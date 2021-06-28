@@ -558,7 +558,6 @@ section {
 .projects {
   min-height: 100vh;
   padding: 3.125rem 0 5rem 0;
-  background-color: #2e2c2c;
 }
 
 .projects__title {
@@ -605,7 +604,6 @@ section {
 
 .projects__project {
   padding: 1.25rem;
-  background-color: #252424;
   border-radius: 0.3125rem;
 }
 
@@ -716,7 +714,6 @@ section {
 
 .contact__links > div {
   padding: 0.3125rem;
-  background-color: #2e2c2c;
   border-radius: 0.3125rem;
 }
 
@@ -740,7 +737,6 @@ section {
   text-align: center;
   font-size: 1rem;
   padding: 0.9375rem 0;
-  background-color: #2e2c2c;
 }
 
 .footer__copyright {
@@ -748,12 +744,11 @@ section {
 }
 
 .footer__backToTop a {
-  color: #bbbbbb;
   padding: 0.3125rem 0.625rem;
   font-size: 0.875rem;
   text-transform: uppercase;
-  background-color: #121212;
-  border: 0.0625rem solid #bbbbbb;
+  border-width: 0.0625rem;
+  border-style: solid;
   border-radius: 3.125rem;
 }
 /*# sourceMappingURL=style.css.map */

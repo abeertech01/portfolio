@@ -13,17 +13,22 @@ const header = document.querySelector('.header');//bg color
 const menubarSpan = document.querySelectorAll('.menubar-span');//bg
 const headerNavMenu = document.querySelector('.header__nav-menu');//bg, border
 const headerNavLink = document.querySelectorAll('.header__nav-link');//bg
-
 //=== home
 const name2 = document.querySelector('.name-2');//tx
-
 //=== about
 const about = document.querySelector('.about');//bg
-
 //=== skills
 const skillsBox = document.querySelector('.skills__box');//border
 const skillsBoxNextDiv = document.querySelectorAll('.skills__box >div:not(:last-child)');//bg
 const skillsExBtn = document.querySelector('.skills__explanation button');//tx, bg, border
+//=== projects
+const projects = document.querySelector('.projects');//bg
+const projectsProject = document.querySelectorAll('.projects__project');//bg
+//=== contact
+const contactLinksDiv = document.querySelectorAll('.contact__links > div');//bg
+//=== footer
+const footer = document.querySelector('.footer');//bg
+const footerBackBtn = document.querySelector('.footer__backToTop a');//tx, bg, border
 
 /* ===== Header Special ===== */
 header.classList.add('h-dark-bg');
@@ -52,6 +57,14 @@ const addModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx, g
   skillsBox.classList.add(grayBorder);
   skillsBoxNextDiv.forEach(el => el.classList.add(mBlackLBg));
   skillsExBtn.classList.add(grayTx, blackBg, grayBorder);
+  // projects
+  projects.classList.add(mBlackLBg);
+  projectsProject.forEach(el => el.classList.add(mBlackBg));
+  // contact
+  contactLinksDiv.forEach(el => el.classList.add(mBlackLBg));
+  // footer
+  footer.classList.add(mBlackLBg);
+  footerBackBtn.classList.add(grayTx, blackBg, grayBorder);
 }
 addModeClasses('black-bg', 'matteBlack-bg', 'matteBlack-l-bg', 'gray-bg', 'gray-tx', 'lightGray-tx', 'gray-border');
 
@@ -73,6 +86,14 @@ const removeModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx
   skillsBox.classList.remove(grayBorder);
   skillsBoxNextDiv.forEach(el => el.classList.remove(mBlackLBg));
   skillsExBtn.classList.remove(grayTx, blackBg, grayBorder);
+  // projects
+  projects.classList.remove(mBlackLBg);
+  projectsProject.forEach(el => el.classList.remove(mBlackBg));
+  // contact
+  contactLinksDiv.forEach(el => el.classList.remove(mBlackLBg));
+  // footer
+  footer.classList.remove(mBlackLBg);
+  footerBackBtn.classList.remove(grayTx, blackBg, grayBorder);
 }
 
 //=== change mode

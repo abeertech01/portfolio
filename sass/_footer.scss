@@ -2,7 +2,6 @@
   text-align: center;
   font-size: 1rem;
   padding: px2rem(15) 0;
-  background-color: $matteBlack-l;
 
   &__copyright{
     margin-bottom: px2rem(5);
@@ -10,12 +9,11 @@
 
   &__backToTop{
     a{
-      color: $gray;
       padding: px2rem(5) px2rem(10);
       font-size: $font-sm;
       text-transform: uppercase;
-      background-color: $black;
-      border: px2rem(1) solid $gray;
+      border-width: px2rem(1);
+      border-style: solid;
       border-radius: px2rem(50);
     }
   }
