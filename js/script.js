@@ -126,7 +126,12 @@ const changeMode = function () {
 }
 headerMode.addEventListener('click', changeMode);
 
-//////// Show Menu /////////////
+
+
+
+
+
+/////////// Show Menu /////////////
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
   const navMenu = document.getElementById(navId);
@@ -139,6 +144,11 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('menuToggler', 'navMenu');
 
+
+
+
+
+
 /*===== ACTIVE AND REMOVE MENU =====*/
 function linkAction() {
   // Active Link
@@ -149,6 +159,10 @@ function linkAction() {
   headerNavMenu.classList.remove('show');
 }
 headerNavLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+
+
 
 /////////// Closing Nav Menu When Click Outside///////////
 const sections = document.querySelectorAll('.out-menu');
