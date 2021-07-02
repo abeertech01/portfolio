@@ -44,11 +44,25 @@ const addModeClasses = (blackBg, mBlackBg, mBlackLBg, grayBg, grayTx, lGrayTx, g
   // header
   menubarSpan.forEach(el => el.classList.add(grayBg));
   headerNavMenu.classList.add(blackBg, grayBorder);
-  headerNavLink.forEach(el => el.addEventListener('mouseover', function () {
-    headerNavLink.forEach(ele => ele.classList.remove(mBlackLBg))
-    this.classList.add(mBlackLBg);
-    this.addEventListener('mouseout', () => { this.classList.remove(mBlackLBg) })
-  }));
+
+
+
+  // headerNavLink.forEach(el => el.addEventListener('mouseover', function () {
+  //   headerNavLink.forEach(ele => ele.classList.remove(mBlackLBg))
+  //   this.classList.add(mBlackLBg);
+  //   this.addEventListener('mouseout', () => {
+  //     this.classList.remove(mBlackLBg);
+  //   })
+  // }));
+  // headerNavLink.forEach(el => el.addEventListener('mouseover', function () {
+  //   this.classList.add(mBlackLBg);
+  // }))
+  // headerNavLink.forEach(el => el.addEventListener('mouseout', function () {
+  //   this.classList.remove(mBlackLBg);
+  // }))
+
+
+
   // home
   name2.classList.add(lGrayTx);
   // about
